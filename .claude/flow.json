@@ -1,0 +1,21 @@
+{
+  "docsRoot": "docs",
+  "state": { "store": "frontmatter" },
+  "tracker": {
+    "kind": "github-only",
+    "board": "labels",
+    "repo": "aleix10kst/titan-gh-only-sandbox",
+    "epicLabel": "epic",
+    "storyLabels": ["story"],
+    "prdLabel": "prd",
+    "approvedLabel": "approved",
+    "specApprovedLabel": "spec-approved",
+    "readyLabel": null,
+    "trustedBots": ["titan-epic-runs-aleix"]
+  },
+  "commands": { "test": "sh check.sh", "lint": "sh check.sh", "typecheck": "sh check.sh" },
+  "branch": { "prefix": "feat/", "base": "main" },
+  "evidence": [],
+  "actor": "human:aleix-canet",
+  "review": { "sensitive": [] }
+}
