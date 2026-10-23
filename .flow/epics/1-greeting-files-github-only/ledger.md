@@ -37,3 +37,23 @@ Branch: `feat/1-greeting-files-github-only` from `origin/main`.
 - deferred ACs: none; MAJOR open: none; blocked: -
 - noticed out of scope: `check.sh:4` exits 0 when the first glob entry is missing, so an empty `greetings/` passes the gate (implementer)
 - tracker comment: (Phase D)
+
+### #5 Say thanks (draft)
+- state: in-review
+- branch: `feat/5-say-thanks-draft`; merge commit `f3a744b` (merge: Say thanks (draft))
+- ACs: 2/2 ✅, deferred: none; last review `.flow/runs/5-say-thanks-draft/review-1.md`
+- tests added: `tests/test_thanks.sh`
+- story gate: green at `b51ec55`, 20 passing checks
+- regression gate: skipped, identical to `b51ec55`; last green gate `b51ec55`; test count 20 (previous 15)
+- review rounds: 1 (converged, 0 new BLOCKING/MAJOR); security review skipped by route
+- implementer model: opus
+- deferred ACs: none; MAJOR open: none; blocked: -
+- noticed out of scope: same `check.sh` empty-glob `exit 0` note as #4; "(draft)" in the title read as a label (AC-1 fixes the content)
+- tracker comment: (Phase D)
+
+## Phase B summary
+- built: #3, #4, #5 (all in-review, merged into the epic branch)
+- blocked: none
+- waiting: none
+- deferred ACs: none
+- GITHUB-PENDING: none
