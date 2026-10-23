@@ -12,4 +12,4 @@
 | 9 | Gate (step 7) | `sh check.sh` ×3 (lint, typecheck, test) → exit 0 each, HEAD 8ce788c; rounds used 0 of 3 | green |
 | 10 | Tree clean | `git status --porcelain` → (empty) | clean |
 | 11 | Bundle closed | `flow-gh state 2 in-review` → `DONE #2 state: in-review`; `flow-gh get 2 state` → `in-review` | done (GitHub-only: no bundle document) |
-| 12 | Tracker updated (step 9a) | | |
+| 12 | Tracker updated (step 9a) | `flow-gh tick 2 AC-1,AC-2` → `DONE #2 ticked AC-1,AC-2`; `flow-gh comment 2 flow:impl …` → `CREATED https://github.com/aleix10kst/titan-gh-only-sandbox/issues/2#issuecomment-6354221111`; `flow-gh unready 2` → `tracker.readyLabel is not set; nothing to remove` | done |
