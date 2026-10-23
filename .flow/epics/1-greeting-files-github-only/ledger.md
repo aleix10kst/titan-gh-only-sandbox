@@ -12,3 +12,15 @@ Already done before this run: #2 Say hello (merged to main via PR #6).
 Branch: `feat/1-greeting-files-github-only` from `origin/main`.
 
 ## Stories
+
+### #3 Say goodbye
+- state: in-review
+- branch: `feat/3-say-goodbye`; merge commit `7949436` (merge: Say goodbye)
+- ACs: 2/2 ✅, deferred: none; last review `.flow/runs/3-say-goodbye/review-1.md`
+- tests added: `tests/test_goodbye.sh`
+- story gate: green at `f6ad591`, 10 passing checks
+- regression gate: skipped, identical to `f6ad591`; last green gate `f6ad591`; test count 10 (previous 5)
+- review rounds: 1 (converged, 0 new BLOCKING/MAJOR); security review skipped by route
+- implementer model: opus
+- deferred ACs: none; MAJOR open: none; noticed out of scope: none; blocked: -
+- tracker comment: (Phase D)
