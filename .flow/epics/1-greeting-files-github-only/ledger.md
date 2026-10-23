@@ -57,3 +57,14 @@ Branch: `feat/1-greeting-files-github-only` from `origin/main`.
 - waiting: none
 - deferred ACs: none
 - GITHUB-PENDING: none
+
+## Reconciliation
+1. Stories: #3, #4, #5 in-review; #2 done before this run (`flow-epic.sh '#1'`). Blocked/waiting: none.
+2. ACs: 6/6 delivered across #3, #4, #5 (2/2 each, per each story's review-1.md). Deferred: none. Ticks wait for Phase D (GitHub-only).
+3. Requirements: none — the epic's Outcome has no `R-n` ids.
+4. Spec test plans: #4 only. AC-1 row → `tests/test_welcome.sh` has 7 matches for `welcome.txt`; AC-2 row → `tests/test_welcome.sh:18` runs `sh check.sh`. Gaps: none.
+5. Spec change lists: #4's spec has no `# Changes` table. Its Approach names `greetings/welcome.txt`, which is in the diff. Code files in the diff: `greetings/{goodbye,thanks,welcome}.txt` plus tests. Extras not named by a spec: `greetings/goodbye.txt` and `greetings/thanks.txt`, which come from the spec-less XS stories #3 and #5 and match their ACs. Not a scope issue.
+6. Leftovers: none (grep over 177 added lines, exit 1). Implementer smell matches: none.
+7. Seam reviews: round 1 `seam-1.md`. Acceptance PASS, security PASS, 0 findings. Overlap files: none. Integration commits: none (docs only). Converged.
+8. Gate: `git status --porcelain` empty; `git diff --quiet b51ec55 HEAD -- . ':!docs' ':!.flow'` exit 0 → gate identical to `b51ec55`, green (20 passing checks).
+9. Bundle: no `GITHUB-PENDING` lines to replay. `flow-gh state 1 in-review` → done. No ADR or glossary changed, so there was no index, lint or commit for the bundle.
